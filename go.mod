@@ -1,4 +1,4 @@
-module github.com/humio/cli
+module github.com/ryjogo/cli
 
 go 1.17
 
