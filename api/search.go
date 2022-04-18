@@ -18,8 +18,8 @@ func (c *Client) QueryJobs() *QueryJobs { return &QueryJobs{client: c} }
 
 type Query struct {
 	QueryString                string            `json:"queryString"`
-	Start                      string            `json:"start,omitempty"`
-	End                        string            `json:"end,omitempty"`
+	Start                      interface{}       `json:"start,omitempty"`
+	End                        interface{}       `json:"end,omitempty"`
 	Live                       bool              `json:"isLive,omitempty"`
 	TimezoneOffset             *int              `json:"timeZoneOffsetMinutes,omitempty"`
 	Arguments                  map[string]string `json:"arguments,omitempty"`
